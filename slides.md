@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: /dou-bg-dark.jpg
 # some information about your slides (markdown enabled)
 title: Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
 info: |
@@ -127,9 +127,6 @@ backgroundSize: 80%
 #### Гарний розробник: 1000 \* 1 == 1 \* 1000 == 10 \* 100 == ...
 
 ---
-
-
----
 layout: image
 image: /timeline-of-tech-longterm.png
 backgroundSize: contain
@@ -211,7 +208,6 @@ layout: center
 - MVP
 - "Одноразові" задачі
 - Хобі-проєкти
-
 
 ---
 

@@ -13,19 +13,11 @@ const props = defineProps({
     type: String,
     default: "cover",
   },
-  bgColor: {
-    type: String,
-    default: "white", // Default background color
-  },
 });
 
-const style = computed(() => {
-  const bgStyle = handleBackground(props.image, false, props.backgroundSize);
-  return {
-    ...bgStyle,
-    backgroundColor: props.bgColor, // Apply the custom background color
-  };
-});
+const style = computed(() =>
+  handleBackground(props.image, false, props.backgroundSize),
+);
 </script>
 
 <template>
