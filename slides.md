@@ -31,6 +31,11 @@ fonts:
 
 # Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
 
+<!-- DOU Logo Top Right for First Slide -->
+<div class="absolute top-4 right-5 z-10">
+  <img src="/dou-day-logo-bw.png" alt="DOU Logo BW" style="height: 60px;" />
+</div>
+
 В'ячеслав Колдовський, SoftServe
 
 <div class="pt-12">
