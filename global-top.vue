@@ -68,6 +68,12 @@
   z-index: 100;
   color: white;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
+}
+
+h1 {
+  color: #02feb9;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 </style>

@@ -56,22 +56,6 @@ fonts:
 
 ---
 layout: image-left
-image: /vyacheslav-koldovskyy.png
----
-
-# В'ячеслав Колдовський
-
-- Ph.D, доцент
-- 20+ років в IT
-- SoftServe Academy Competence Manager
-- Certified Google Cloud Professional Architect
-- Ентузіаст Практичного AI
-- Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
-- Блогер: [t.me/programmingmentor](https://t.me/programmingmentor)
-- Лінкедін: [koldovsky](https://www.linkedin.com/in/koldovsky/)
-
----
-layout: image-left
 image: /prince-of-persia.webp
 ---
 
@@ -91,56 +75,21 @@ backgroundSize: contain
 </div>
 
 ---
-layout: image
-image: /meme-error-line-42.jpg
-backgroundSize: contain
----
 
----
-layout: image
-image: /meme-different-error.jpg
-backgroundSize: contain
----
+<div class="w-full h-full flex justify-center items-center">
+  <img src="/meme-error-line-42.jpg" class="h-3/4 object-contain" />
+</div>
 
 ---
 layout: image
 image: /meme-dot1-dot2.png
-backgroundSize: 80%
+backgroundSize: 40%
 ---
 
 ---
 
-# Концепція "1000x Developer"
-
-#### 1000x Developer == Software Engineering Skills \* AI Codegen Skills
-
-<br>
-
-#### Поганий розробник: 0 \* 1000 == 0
-
-<br>
-
-#### Також поганий розробник: 1000 \* 0 == 0
-
-<br>
-
-#### Гарний розробник: 1000 \* 1 == 1 \* 1000 == 10 \* 100 == ...
-
----
-layout: image
-image: /timeline-of-tech-longterm.png
-backgroundSize: contain
-title: Timeline of Tech
----
-
----
-layout: center
----
-
-#### It's not that everything is developing quickly now, it's that everything used to happen slowly
-
-<div class="flex justify-center">
-  <Tweet class="w-1/2" id="1848558163756519607" />
+<div class="w-full h-full flex justify-center items-center">
+  <img src="/meme-different-error.jpg" class="h-3/4 object-contain" />
 </div>
 
 ---
@@ -162,7 +111,9 @@ layout: center
 ---
 
 <div class="w-full flex justify-center">
-  <Tweet scale="0.65" id="1901660771505021314" class="w-3/4"/>
+  <div class="ml-20"> 
+    <Tweet scale="0.65" id="1901660771505021314" class="w-100"/>
+  </div>
 </div>
 
 ---
@@ -201,21 +152,28 @@ layout: center
 
 ---
 
-# Чи є взагалі задачі, для яких кодогенерація з AI працює?
-
----
+# Чи є взагалі задачі, для яких кодогенерація з AI працює вже сьогодні?
 
 - MVP
-- "Одноразові" задачі
 - Хобі-проєкти
+- "Одноразові" задачі
+- Експерименти і прототипи
+- ...
 
 ---
 
-<Tweet scale="0.65" id="1739052802314539371" class="w-3/4"/>
+<div class="w-full flex justify-center">
+  <div class="ml-16"> 
+    <Tweet scale="0.75" id="1739052802314539371" class="w-100"/>
+  </div>
+</div>
 
 ---
+layout: image-left
+image: /vibe-coding-tools.jpg
+---
 
-# Tools
+# Інструменти
 
 - Cursor
 - Windsurf
@@ -231,7 +189,7 @@ layout: center
 
 ---
 
-# How it works?
+# Як це працює: всім керує LLM
 
 <div class="w-full flex justify-center">
   <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
@@ -263,15 +221,27 @@ layout: center
 
 ---
 
-# How it works - more details
+# SWE Bench Verified
 
 <div class="w-full flex justify-center">
+  <img src="/swe-bench.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://www.swebench.com/#verified">https://www.swebench.com/#verified</a>
+</div>
+
+---
+
+# З чого складається prompt?
+
+<div class="w-full flex justify-center mt-20">
   <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
 </div>
 
 ---
 
-# How it works - simple agent
+# Простий агент
 
 <div class="w-full flex justify-center">
   <img src="/how-works-simple-agent.png" class="w-4/5"/>
@@ -279,7 +249,7 @@ layout: center
 
 ---
 
-# How it works - modern agent
+# Агент з інструментами
 
 <div class="w-full flex justify-center">
   <img src="/how-works-modern-agent.png" class="w-4/5"/>
@@ -287,7 +257,33 @@ layout: center
 
 ---
 
-# Main issue: context window limit and price
+# Основні проблеми
+
+- Недетермінованість LLM: ефект метелика
+- Обмеження контекстового вікна
+- Галюцинації
+- Безпека і юридичні питання
+- Сучасні знання
+- ...
+
+---
+layout: image-left
+image: /butterfly-effect.png
+---
+
+# Недертермінованість LLM - ефект метелика
+
+Використання LLM для класичного інженера схоже на боротьбу з хаосом
+
+- **Повторюваність не гарантована**
+- **Нестабільні залежності**
+- **Розсіяні правки по проєкту**
+- **Масове переписування існуючого коду**
+- **Дивергенція (дрейф) агентів у багатокрокових ланцюжках**
+
+---
+
+# Обмеження контекстового вікна
 
 <div class="w-full flex justify-center">
   <img src="/context-window.png" class="w-4/5"/>
@@ -295,55 +291,58 @@ layout: center
 
 ---
 
-# LOC to LLM tokens
+# LOC в LLM токенах
 
 ## React:
 
-- **React jsx (100 lines):** 700 tokens
-- **React jsx (200 lines):** 1,500 tokens
+- **React jsx (100 lines):** 700 токенів
+- **React jsx (200 lines):** 1,500 токенів
 
 ## SQL:
 
-- **SQL script (100 lines):** 1,150 tokens
-- **SQL script (200 lines):** 2,500 tokens
+- **SQL script (100 lines):** 1,150 токенів
+- **SQL script (200 lines):** 2,500 токенів
 
 ## Python:
 
-- **Python source code file (100 lines):** 1,000 tokens
-- **Python source code file (200 lines):** 1,700 tokens
+- **Python source code file (100 lines):** 1,000 токенів
+- **Python source code file (200 lines):** 1,700 токенів
 
-Source https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
+Джерело: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Price
+# Ціна
 
 <div class="w-full flex justify-center">
-  <img src="/openai-pricing.png" class="w-4/5"/>
+  <img src="/openai-pricing.png" class="w-120"/>
 </div>
 
-https://openai.com/api/pricing/
+<div class="w-full flex justify-center mt-5">
+  <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a>
+</div>
 
 ---
 
-# Security and Legal Issues with AI Code Generation Tools
+# Безпека і юридичні питання з генерацією коду з AI
 
-- Run arbitrary commands on system
-- Use integrations with external services without proper control
-- Leak sensitive information and intellectual property
-- Generate insecure (vulnerable) code
-- Install unwanted dependencies
-- Generate code with intellectual property violations
+- Генерація небезпечного (вразливого) коду
+- Виконання довільних команд у системі
+- Використання інтеграцій із зовнішніми сервісами без належного контролю
+- Встановлення небажаних залежностей (вектор атак)
+- Витік конфіденційної інформації та інтелектуальної власності
+- Генерація коду з порушенням прав інтелектуальної власності
 
 ---
 
-# Tools: general purpose
+# Інструменти: загального призначення
 
 - ChatGPT
-- Grok
 - Gemini (gemini.google, aistudio.google.com)
+- Grok
 - Claude
 - DeepSeek
+- ...
 
 ---
 
@@ -358,7 +357,7 @@ https://openai.com/api/pricing/
 # Grok
 
 <div class="w-full flex justify-center">
-  <img src="/grok.png" class="w-1/2"/>
+  <img src="/grok.png" class="w-140"/>
 </div>
 
 ---
@@ -626,6 +625,22 @@ https://orm.drizzle.team/llms.txt
 - Speed of development
 - Cost of usage
 - ...
+
+---
+layout: image-left
+image: /vyacheslav-koldovskyy.png
+---
+
+# В'ячеслав Колдовський
+
+- Ph.D, доцент
+- 20+ років в IT
+- SoftServe Academy Competence Manager
+- Certified Google Cloud Professional Architect
+- Ентузіаст Практичного AI
+- Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
+- Блогер: [t.me/programmingmentor](https://t.me/programmingmentor)
+- Лінкедін: [koldovsky](https://www.linkedin.com/in/koldovsky/)
 
 ---
 ## layout: end
