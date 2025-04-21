@@ -3,14 +3,14 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: /dou-bg-dark.jpg
+background: /dou-first-slide-bg.png
 # some information about your slides (markdown enabled)
 title: Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
 info: |
   ## Виступ для ДОУ
 
 # apply unocss classes to the current slide
-class: text-center
+# class: text-center  <-- Removing default text-center for more control
 # https://sli.dev/features/drawing
 drawings:
   persist: false
@@ -29,42 +29,30 @@ fonts:
   # italic: false
 ---
 
-# Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
-
-<!-- DOU Logo Top Right for First Slide -->
+<!-- DOU Logo Top Right -->
 <div class="absolute top-4 right-5 z-10">
   <img src="/dou-day-logo-bw.png" alt="DOU Logo BW" style="height: 60px;" />
 </div>
 
-В'ячеслав Колдовський, SoftServe
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    <carbon:arrow-right class="inline"/>
-  </span>
+<div class="absolute top-1/3 left-[20%] text-white text-lg z-10" style="margin-top: -40px; background-color: black; padding: 10px;">
+  Київ, 2025
 </div>
 
-<div class="m-6 flex gap-2 fixed bottom-0 left-0">
-  <a href="https://www.youtube.com/c/programmingmentorua">
-    <div class="h-8 w-8">
-      <img src="/pm-logo.jpg" class="h-full w-full rounded-full"/>
-    </div>
-  </a>
+<!-- Wrapper Div for Both Blocks -->
+<div class="absolute top-1/3 left-[20%] w-3/5 z-10">
+  <!-- Black Title Div -->
+  <div class="p-6" style="background-color: black;">
+    <h1 class="text-white font-black uppercase tracking-wide leading-none" style="font-size: 30px; line-height: 1;">
+      Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
+    </h1>
+  </div>
+  <!-- Pink Subtitle Div (moved back inside, width adjusted) -->
+  <div class="p-4 w-2/3 ml-1/2" style="background-color: rgb(255, 22, 177);"> <!-- Adjusted width to w-2/3 -->
+    <p class="text-white text-sm">
+      В'ячеслав Колдовський, SoftServe
+    </p>
+  </div>
 </div>
-
-<style>
-  a {
-    text-decoration: none;
-    border: 2.4px solid transparent;
-  }
-  a:hover {
-    border-color: var(--slidev-theme-primary);
-  }
-</style>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
 layout: image-left
