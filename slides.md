@@ -20,6 +20,13 @@ transition: slide-left
 mdc: true
 # take snapshot for each slide in the overview
 overviewSnapshots: true
+
+# Configure fonts (https://sli.dev/custom/config-fonts.html)
+fonts:
+  sans: "IBM Plex Sans"
+  # Optional: specify weights and italic if needed
+  # weights: '400,500,700'
+  # italic: false
 ---
 
 # Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
