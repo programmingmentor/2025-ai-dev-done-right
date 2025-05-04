@@ -76,23 +76,18 @@ backgroundSize: contain
 
 ---
 
-<div class="w-full h-full flex justify-center items-center">
-  <img src="/meme-error-line-42.jpg" class="h-3/4 object-contain" />
+# Всім знайомо :)
+
+<div class="w-full flex justify-center items-center space-x-4 mt-10">
+  <img src="/meme-dot1-dot2.jpg" width="200px" class="rounded shadow"/>
+  <img src="/meme-works-doesnt-work.jpg" width="200px" class="rounded shadow"/>
+  <img src="/meme-regex.jpeg" width="200px" class="rounded shadow"/>
+  <img src="/meme-error-line-42.jpg" width="200px" class="rounded shadow"/>
 </div>
 
----
-layout: image
-image: /meme-dot1-dot2.png
-backgroundSize: 40%
----
-
-
-
----
-
-<div class="w-full h-full flex justify-center items-center">
-  <img src="/meme-different-error.jpg" class="h-3/4 object-contain" />
-</div>
+<!--
+https://www.reddit.com/r/compsci/comments/1d2pb75/01_02_030000000000000004_in_depth/
+-->
 
 ---
 
@@ -107,14 +102,11 @@ backgroundSize: 40%
 # Пітер Левелс
 
 <div class="w-full flex justify-center">
-  <img src="/levelsio.png" class="w-1/2"/>
-</div>
-
----
-
-<div class="w-full flex justify-center">
   <div class="ml-20"> 
-    <Tweet scale="0.65" id="1901660771505021314" class="w-100"/>
+    <img src="/levelsio.png" class="w-100 h-auto"/>
+  </div>
+  <div class="ml-20"> 
+    <Tweet scale="0.55" id="1901660771505021314" class="w-100"/>
   </div>
 </div>
 
@@ -124,8 +116,27 @@ backgroundSize: 40%
   <img src="/personal-motivation-calendar.png" class="w-1/2"/>
 </div>
 
-<div class="w-full flex justify-center">
+<div class="w-full flex justify-center items-center space-x-8 mt-10">
   <a href="https://personalmotivationcalendar.com/">https://personalmotivationcalendar.com/</a>
+  <img src="/qr-personalmotivationcalendar.png" class="w-1/8"/>
+</div>
+
+---
+
+# Завдання, для яких генерація коду за допомогою ШІ вже працює сьогодні
+
+- MVP
+- Хобі-проекти
+- "Одноразові" завдання
+- Експерименти та прототипи
+- ...
+
+---
+
+# Але...
+
+<div class="w-full flex justify-center">
+  <img src="/meme-not-so-simple.jpg" class="rounded shadow"/>
 </div>
 
 ---
@@ -146,7 +157,17 @@ backgroundSize: 40%
 
 ---
 
-# Невдачі - rm -rf
+# Майстер-клас з багфіксингом
+
+<div class="w-full flex justify-center">
+  <div class="ml-20"> 
+    <Tweet scale="0.65" id="1917641105245679814" class="w-100"/>
+  </div>
+</div>
+
+---
+
+# Просто почистимо папку...
 
 <div class="w-full flex justify-center">
   <img src="/fail-clean-directory.png" class="w-4/5"/>
@@ -154,71 +175,84 @@ backgroundSize: 40%
 
 ---
 
-# Чи існують завдання, для яких генерація коду за допомогою ШІ вже працює сьогодні?
-
-- MVP
-- Хобі-проекти
-- "Одноразові" завдання
-- Експерименти та прототипи
-- ...
-
----
-
-<div class="w-full flex justify-center">
-  <div class="ml-16"> 
-    <Tweet scale="0.75" id="1739052802314539371" class="w-100"/>
+<div class="w-full flex justify-center items-center h-full">
+  <div class="w-4/5">
+    <h1 class="text-center">Де ми зараз з AI в розробці?</h1>
   </div>
 </div>
 
 ---
-layout: image-left
+layout: image
 image: /vibe-coding-tools.jpg
+backgroundSize: contain
 ---
-
-# Інструменти
-
-- Cursor
-- Windsurf
-- Cline
-- Github Copilot
-- v0.dev
-- bolt.new
-- repl.it agent
-- lovable
-- ChatGPT
-- Grok
-- ...
 
 ---
 
-# Як це працює: мозок - це LLM
+# Етапи впровадження AI в IT
 
 <div class="w-full flex justify-center">
+  <img src="/current-state-0-100.png" class="w-3/5"/>
+</div>
+
+---
+
+# Етапи + Інструменти
+
+<div class="w-full flex justify-center">
+  <img src="/current-state-0-100-with-icons.png" class="w-3/5"/>
+</div>
+
+---
+
+# Як це працює: найпростіша генерація коду з LLM
+
+<div class="w-full flex justify-center mt-20">
   <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
 </div>
 
 ---
 
-# LLM
+# Компоненти промптів
 
-<div class="w-full flex justify-center">
-  <img src="/chatbot-arena-language.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://lmarena.ai/">https://lmarena.ai/</a>
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
 </div>
 
 ---
 
-# WebDev Arena
+# Простий агент
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-simple-agent.png" class="w-4/5"/>
+</div>
+
+---
+
+# Агент з інструментами
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-agent-with-tools.png" class="w-4/5"/>
+</div>
+
+---
+
+# Агент з інструментами і пам'яттю
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-modern-agent-tools-memory.png" class="w-4/5"/>
+</div>
+
+---
+
+# LLM - моделі для написання коду
 
 <div class="w-full flex justify-center">
-  <img src="/web-dev-arena.png" class="w-4/5"/>
+  <img src="/lmarena-coding.png" class="w-4/5"/>
 </div>
 
 <div class="w-full flex justify-center">
-  <a href="https://web.lmarena.ai/">https://web.lmarena.ai/</a>
+  <a href="https://lmarena.ai/">https://lmarena.ai/</a>
 </div>
 
 ---
@@ -235,34 +269,11 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# З чого складається промпт?
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
-</div>
-
----
-
-# Простий агент
-
-<div class="w-full flex justify-center">
-  <img src="/how-works-simple-agent.png" class="w-4/5"/>
-</div>
-
----
-
-# Агент з інструментами
-
-<div class="w-full flex justify-center">
-  <img src="/how-works-modern-agent.png" class="w-4/5"/>
-</div>
-
----
-
 # Основні проблеми
 
-- Недетермінованість LLM: ефект метелика
+- Недетермінованість LLM
 - Обмеження контекстного вікна
+- Неточне слідування інструкціям
 - Галюцинації
 - Безпека та юридичні питання
 - Актуальність знань
@@ -273,7 +284,7 @@ layout: image-left
 image: /butterfly-effect.png
 ---
 
-# Недетермінованість LLM - ефект метелика
+# Недетермінованість LLM
 
 Використання LLM для класичного інженера — це як боротьба з хаосом
 
@@ -287,25 +298,30 @@ image: /butterfly-effect.png
 
 # Обмеження контекстного вікна
 
-<div class="w-full flex justify-center">
-  <img src="/context-window.png" class="w-4/5"/>
-</div>
+- Поточні моделі обмежені вікном у 128 тис - 10 млн токенів
+- З великим контекстом LLM починають галюцинувати
+- Запити з великим контекстом працюють повільно
+- Запити з великим контекстом коштують дорого
+-
+-
 
 ---
 
-# LOC в токенах LLM
+# Скільки токенів займає код?
 
-## React:
+LOC в токенах LLM
+
+### React:
 
 - **React jsx (100 рядків):** 700 токенів
 - **React jsx (200 рядків):** 1,500 токенів
 
-## SQL:
+### SQL:
 
 - **SQL скрипт (100 рядків):** 1,150 токенів
 - **SQL скрипт (200 рядків):** 2,500 токенів
 
-## Python:
+### Python:
 
 - **Файл Python (100 рядків):** 1,000 токенів
 - **Файл Python (200 рядків):** 1,700 токенів
@@ -314,7 +330,15 @@ image: /butterfly-effect.png
 
 ---
 
-# Ціна
+# Зростання розміру контекстного вікна з часом
+
+<div class="w-full flex justify-center mt-15">
+  <img src="/context-window.png" class="w-3/5"/>
+</div>
+
+---
+
+# Але № 1: Ціна
 
 <div class="w-full flex justify-center">
   <img src="/openai-pricing.png" class="w-120"/>
@@ -323,6 +347,12 @@ image: /butterfly-effect.png
 <div class="w-full flex justify-center mt-5">
   <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a>
 </div>
+
+---
+
+# Але № 2: Якість
+
+
 
 ---
 
@@ -612,6 +642,16 @@ https://orm.drizzle.team/llms.txt
 
 <div class="w-full flex justify-center mt-20">
   <img src="/local-history.png" class="w-1/2"/>
+</div>
+
+---
+
+# Ітеративно
+
+<div class="w-full flex justify-center">
+  <div class="ml-16"> 
+    <Tweet scale="0.55" id="1739052802314539371" class="w-100"/>
+  </div>
 </div>
 
 ---
