@@ -188,6 +188,16 @@ backgroundSize: contain
 ---
 
 ---
+layout: image
+image: /current-state-vibe-coding-vs-ai-assisted.png
+backgroundSize: contain
+---
+
+<!--
+https://x.com/mattpocockuk/status/1913313872666321018
+-->
+
+---
 
 # Етапи впровадження AI в IT
 
@@ -205,291 +215,14 @@ backgroundSize: contain
 
 ---
 
-# Як це працює: найпростіша генерація коду з LLM
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
-</div>
-
----
-
-# Компоненти промптів
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
-</div>
-
----
-
-# Простий агент
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-simple-agent.png" class="w-4/5"/>
-</div>
-
----
-
-# Агент з інструментами
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-agent-with-tools.png" class="w-4/5"/>
-</div>
-
----
-
-# Агент з інструментами і пам'яттю
-
-<div class="w-full flex justify-center mt-20">
-  <img src="/how-works-modern-agent-tools-memory.png" class="w-4/5"/>
-</div>
-
----
-
-# LLM - моделі для написання коду
-
-<div class="w-full flex justify-center">
-  <img src="/lmarena-coding.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://lmarena.ai/">https://lmarena.ai/</a>
-</div>
-
----
-
-# SWE Bench Verified
-
-<div class="w-full flex justify-center">
-  <img src="/swe-bench.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://www.swebench.com/#verified">https://www.swebench.com/#verified</a>
-</div>
-
----
-
-# Основні проблеми
-
-- Недетермінованість LLM
-- Обмеження контекстного вікна
-- Неточне слідування інструкціям
-- Галюцинації
-- Безпека та юридичні питання
-- Актуальність знань
-- ...
-
----
-layout: image-left
-image: /butterfly-effect.png
----
-
-# Недетермінованість LLM
-
-Використання LLM для класичного інженера — це як боротьба з хаосом
-
-- **Повторюваність не гарантована**
-- **Нестабільні залежності**
-- **Розкидані правки по проекту**
-- **Масове переписування існуючого коду**
-- **Розбіжність (дрейф) агентів у багатоетапних ланцюжках**
-
----
-
-# Обмеження контекстного вікна
-
-- Поточні моделі обмежені вікном у 128 тис - 10 млн токенів
-- З великим контекстом LLM починають галюцинувати
-- Запити з великим контекстом працюють повільно
-- Запити з великим контекстом коштують дорого
--
--
-
----
-
-# Скільки токенів займає код?
-
-LOC в токенах LLM
-
-### React:
-
-- **React jsx (100 рядків):** 700 токенів
-- **React jsx (200 рядків):** 1,500 токенів
-
-### SQL:
-
-- **SQL скрипт (100 рядків):** 1,150 токенів
-- **SQL скрипт (200 рядків):** 2,500 токенів
-
-### Python:
-
-- **Файл Python (100 рядків):** 1,000 токенів
-- **Файл Python (200 рядків):** 1,700 токенів
-
-Джерело: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
-
----
-
-# Зростання розміру контекстного вікна з часом
-
-<div class="w-full flex justify-center mt-15">
-  <img src="/context-window.png" class="w-3/5"/>
-</div>
-
----
-
-# Але № 1: Ціна
-
-<div class="w-full flex justify-center">
-  <img src="/openai-pricing.png" class="w-120"/>
-</div>
-
-<div class="w-full flex justify-center mt-5">
-  <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a>
-</div>
-
----
-
-# Але № 2: Якість
-
----
-
-# Але № 3: Швидкість
-
----
-
-# Якою має бути гарна архітектура проєкту для оптимальної генерації коду?
-
-- **Модульність:** Чіткий поділ на компоненти, низька зв'язність.
-- **Чіткі API/Інтерфейси:** Добре визначені контракти між модулями.
-- **Підтримуваність:** Читабельний код, тестованість.
-- **Консистентність:** Єдині патерни, практики та стиль коду.
-- **Автоматизація (CI/CD, Тести):** Автоматизовані процеси збірки, тестування та розгортання.
-- **Керування залежностями:** Чітке визначення та керування зовнішніми бібліотеками.
-- **Безпека:** Архітектурні рішення + ретельна перевірка згенерованого коду.
-- **Документація:** Актуальна документація архітектури та коду.
-
----
-
-# Безпека та юридичні проблеми при генерації коду ШІ
-
-- Генерація небезпечного (вразливого) коду
-- Виконання довільних команд у системі
-- Використання інтеграцій із зовнішніми сервісами без належного контролю
-- Встановлення небажаних залежностей (вектор атаки)
-- Витік конфіденційної інформації та інтелектуальної власності
-- Генерація коду, що порушує права інтелектуальної власності
-
----
-
-# Інструменти: загального призначення
-
-- ChatGPT
-- Gemini (gemini.google, aistudio.google.com)
-- Grok
-- Claude
-- DeepSeek
-- ...
-
----
-
-# ChatGPT
-
-<div class="w-full flex justify-center">
-  <img src="/chatgpt-canvas.png" class="w-4/5"/>
-</div>
-
----
-
-# Grok
-
-<div class="w-full flex justify-center">
-  <img src="/grok.png" class="w-140"/>
-</div>
-
----
-
-# Gemini
-
-<div class="w-full flex justify-center">
-  <img src="/gemini.png" class="w-4/5"/>
-</div>
-
----
-
-# Gemini AI Studio
-
-<div class="w-full flex justify-center">
-  <img src="/gemini-ai-studio.png" class="w-4/5"/>
-</div>
-
----
-
-# Патерн "Два кроки назад"
-
-<div class="w-full flex justify-center">
-  <img src="/two-steps-back.png" class="w-4/5"/>
-</div>
-
----
-
-# Інструменти для промптів репозиторію - Repomix
-
-<div class="w-full flex justify-center">
-  <img src="/repomix.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://repomix.com/">https://repomix.com/</a>
-</div>
-
----
-
-# 16x Prompt
-
-<div class="w-full flex justify-center">
-  <img src="/16x-prompt.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://prompt.16x.engineer/">https://prompt.16x.engineer/</a>
-</div>
-
----
-
-# bolt.new
-
-<div class="w-full flex justify-center">
-  <img src="/bolt-new.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://bolt.new/">https://bolt.new/</a>
-</div>
-
----
-
-# v0.dev
-
-<div class="w-full flex justify-center">
-  <img src="/v0-dev.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://v0.dev/">https://v0.dev/</a>
-</div>
-
----
-
-# repl.it agent
-
-<div class="w-full flex justify-center">
-  <img src="/replit.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://repl.it/">https://repl.it/</a>
-</div>
+# Інструменти по категоріях
+
+- Загального призначення, генерація документів: ChatGPT, Gemini, Grok, Claude, DeepSeek
+- IDE / розширення для IDE: Cursor, Windsurf, Copilot, Cline, Roo Coode, Augment Agent, Trae
+- Автономні агенти: Devin, SWE Agent, Open Hands, Devika
+- Прототипування / UI: bolt.new, v0.dev, repl.it agent, lovable, same.dev
+- MCP: Context7, GitHub, Browser Tools, File System, Git Tools, Figma, Browser Use
+- Інструменти/сервіси: Repomix, Task Master, cursor.new
 
 ---
 
@@ -537,6 +270,320 @@ LOC в токенах LLM
 
 <div class="w-full flex justify-center">
   <a href="https://cline.bot/">https://cline.bot/</a>
+</div>
+
+---
+
+# Як це працює: найпростіша генерація коду з LLM
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
+</div>
+
+---
+
+# Промпт складається з компонентів
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
+</div>
+
+---
+
+# Простий агент
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-simple-agent.png" class="w-4/5"/>
+</div>
+
+---
+
+# Агент з інструментами
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-agent-with-tools.png" class="w-4/5"/>
+</div>
+
+---
+
+# Агент з інструментами і пам'яттю
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/how-works-modern-agent-tools-memory.png" class="w-4/5"/>
+</div>
+
+---
+
+# Мультиагентний підхід
+
+<div class="w-full flex justify-center mt-10">
+  <img src="/how-works-multi-agent.png" class="w-100"/>
+</div>
+
+---
+
+# LLM - моделі для написання коду
+
+<div class="w-full flex justify-center">
+  <img src="/lmarena-coding.png" class="w-4/5"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://lmarena.ai/">https://lmarena.ai/</a>
+</div>
+
+<!--
+# SWE Bench Verified
+
+<div class="w-full flex justify-center">
+  <img src="/swe-bench.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://www.swebench.com/#verified">https://www.swebench.com/#verified</a>
+</div>
+-->
+
+---
+
+# Основні проблеми
+
+- Недетермінованість LLM
+- Обмеження контекстного вікна
+- Неточне слідування інструкціям
+- Галюцинації
+- Безпека та юридичні питання
+- Актуальність знань
+- Складнощі з не дуже поширеними технологіями
+- ...
+
+---
+layout: image-left
+image: /butterfly-effect.png
+---
+
+# Недетермінованість LLM
+
+Використання LLM для класичного інженера — це як боротьба з хаосом
+
+- **Повторюваність не гарантована**
+- **Нестабільні залежності**
+- **Розкидані правки по проекту**
+- **Масове переписування існуючого коду**
+- **Розбіжність (дрейф) агентів у багатоетапних ланцюжках**
+
+---
+
+# Обмеження контекстного вікна
+
+- Поточні моделі обмежені вікном у 128 тис - 10 млн токенів
+- З великим контекстом LLM починають галюцинувати
+- Запити з великим контекстом працюють повільно
+- Запити з великим контекстом коштують дорого
+- ...
+
+---
+
+# Скільки токенів займає код?
+
+LOC в токенах LLM
+
+### React:
+
+- **React jsx (100 рядків):** 700 токенів
+- **React jsx (200 рядків):** 1,500 токенів
+
+### SQL:
+
+- **SQL скрипт (100 рядків):** 1,150 токенів
+- **SQL скрипт (200 рядків):** 2,500 токенів
+
+### Python:
+
+- **Файл Python (100 рядків):** 1,000 токенів
+- **Файл Python (200 рядків):** 1,700 токенів
+
+Джерело: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
+
+---
+
+# Зростання розміру контекстного вікна з часом
+
+<div class="w-full flex justify-center mt-15">
+  <img src="/context-window.png" class="w-3/5"/>
+</div>
+
+---
+
+# Але № 1: Ціна
+
+<div class="w-full flex justify-center">
+  <img src="/openai-pricing.png" class="w-120"/>
+</div>
+
+<div class="w-full flex justify-center mt-5">
+  <a href="https://openai.com/api/pricing/">https://openai.com/api/pricing/</a>
+</div>
+
+---
+layout: image
+image: /live-bench.png
+backgroundSize: contain
+---
+
+# Але № 2: <br> Якість
+
+---
+
+# Але № 3: Швидкість
+
+Оцінка часу виводу 1 млн токенів
+
+<div class="w-full flex justify-center mt-20">
+  <img src="/token-output-speed.png" class="w-1/2"/>
+</div>
+
+---
+
+# Ризики безпеки та правові аспекти генерації коду ШІ
+
+- Генерація небезпечного (вразливого) коду
+- Виконання довільних команд у системі
+- Використання інтеграцій із зовнішніми сервісами без належного контролю
+- Встановлення небажаних залежностей (вектор атаки)
+- Витік конфіденційної інформації та інтелектуальної власності
+- Генерація коду, що порушує права інтелектуальної власності
+
+---
+layout: section
+---
+
+# Рішення
+
+---
+
+# Якою має бути гарна архітектура проєкту <span class="strikethrough-target" v-click.hide>для оптимальної генерації коду</span>?
+
+- **Модульність:** Чіткий поділ на компоненти, низька зв'язність.
+- **Чіткі API/Інтерфейси:** Добре визначені контракти між модулями.
+- **Підтримуваність:** Читабельний код, тестованість.
+- **Консистентність:** Єдині патерни, практики та стиль коду.
+- **Автоматизація (CI/CD, Тести):** Автоматизовані процеси збірки, тестування та розгортання.
+- **Керування залежностями:** Чітке визначення та керування зовнішніми бібліотеками.
+- **Безпека:** Архітектурні рішення + ретельна перевірка згенерованого коду.
+- **Документація:** Актуальна документація архітектури та коду.
+
+<style>
+.slidev-vclick-target.strikethrough-target {
+  /* Ensure it's always visible and doesn't fade */
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transition: none;
+  text-decoration: none; /* Initial state: no strikethrough */
+}
+.slidev-vclick-target.strikethrough-target.slidev-vclick-hidden {
+  /* Apply strikethrough *instead* of hiding when clicked */
+  text-decoration: line-through;
+  opacity: 1 !important; /* Keep it visible */
+  pointer-events: auto !important;
+}
+</style>
+
+---
+layout: image-left
+image: /bounded-context.svg
+---
+
+# Обмежений контекст (bounded context)
+
+- Концепція з "Domain Driven Design"
+- Єдине значення термінів: усі поняття зрозумілі й послідовні тільки всередині цього контексту.
+- Ізоляція коду й даних: модель, база, правила та лексикон не змішуються з іншими контекстами.
+- Явні інтеграційні контракти: взаємодія ззовні відбувається лише через чітко визначені API / події.
+
+---
+
+# Послідовність розробки
+
+- Генеруємо набір документів
+- Прототипуємо
+- Розробляємо
+- Інтегруємо
+- Тестуємо
+- Розгортаємо
+- ...
+
+---
+
+# Документи
+
+- **Вимоги до проєкту:** Цілі, функції, користувачі (PRD).
+- **Критерії приймання:** Умови для перевірки функціональності.
+- **Архітектурний дизайн:** Компоненти, технології, потоки даних (ADR).
+- **Модель даних:** Схема бази даних, сутності.
+- **Специфікації API:** Контракти між модулями.
+- **План тестування:** Стратегія та види тестів.
+- **Керівництво зі стилю коду:** Правила форматування, лінтинг.
+- **Додаткові інструкції для AI:** Шаблони промптів, контекст для AI.
+
+---
+
+# Патерн "Два кроки назад"
+
+<div class="w-full flex justify-center">
+  <img src="/two-steps-back.png" class="w-1/5"/>
+</div>
+
+---
+
+# Інструменти для промптів репозиторію - Repomix
+
+<div class="w-full flex justify-center">
+  <img src="/repomix.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://repomix.com/">https://repomix.com/</a>
+</div>
+
+---
+
+# Прототипування
+
+---
+
+# bolt.new
+
+<div class="w-full flex justify-center">
+  <img src="/bolt-new.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://bolt.new/">https://bolt.new/</a>
+</div>
+
+---
+
+# v0.dev
+
+<div class="w-full flex justify-center">
+  <img src="/v0-dev.png" class="w-4/5"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://v0.dev/">https://v0.dev/</a>
+</div>
+
+---
+
+# repl.it agent
+
+<div class="w-full flex justify-center">
+  <img src="/replit.png" class="w-4/5"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://repl.it/">https://repl.it/</a>
 </div>
 
 ---
@@ -628,6 +675,18 @@ https://orm.drizzle.team/llms.txt
 <div class="w-full flex justify-center">
   <a href="https://forum.cursor.com/t/plan-vs-act-mode-xml-prompt/50996">https://forum.cursor.com/t/plan-vs-act-mode-xml-prompt/50996</a>
 </div>
+
+---
+
+# Документування архітектури
+
+https://x.com/flowisgreat/status/1917328733905772880
+
+---
+
+# Пам'ять
+
+https://x.com/elie2222/status/1914374725129666904
 
 ---
 
