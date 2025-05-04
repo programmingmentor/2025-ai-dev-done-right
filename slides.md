@@ -5,9 +5,9 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: /dou-first-slide-bg.png
 # some information about your slides (markdown enabled)
-title: Cursor, Windsurf, Copilot, Cline — best practices for development with AI
+title: Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з ШІ
 info: |
-  ## Presentation for DOU
+  ## Презентація для DOU
 
 # apply unocss classes to the current slide
 # class: text-center  <-- Removing default text-center for more control
@@ -35,7 +35,7 @@ fonts:
 </div>
 
 <div class="absolute top-1/3 left-[20%] text-white text-lg z-10" style="margin-top: -40px; background-color: black; padding: 10px;">
-  Kyiv, 2025
+  Київ, 2025
 </div>
 
 <!-- Wrapper Div for Both Blocks -->
@@ -43,13 +43,13 @@ fonts:
   <!-- Black Title Div -->
   <div class="p-6" style="background-color: black;">
     <h1 class="text-white font-black uppercase tracking-wide leading-none" style="font-size: 30px; line-height: 1;">
-      Cursor, Windsurf, Copilot, Cline — best practices for development with AI
+      Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з ШІ
     </h1>
   </div>
   <!-- Pink Subtitle Div (moved back inside, width adjusted) -->
   <div class="p-4 w-2/3 ml-1/2" style="background-color: rgb(255, 22, 177);"> <!-- Adjusted width to w-2/3 -->
     <p class="text-white text-sm">
-      Viacheslav Koldovskyy, SoftServe
+      В'ячеслав Колдовський, SoftServe
     </p>
   </div>
 </div>
@@ -60,7 +60,7 @@ image: /prince-of-persia.webp
 ---
 
 <div class="h-full flex items-center">
-  <h1>Do you remember the moment when you wanted to become a developer?</h1>
+  <h1>Чи пам'ятаєте ви той момент, коли захотіли стати розробником?</h1>
 </div>
 
 ---
@@ -71,7 +71,7 @@ backgroundSize: contain
 ---
 
 <div class="h-full flex items-center">
-  <h1>And when you started writing code, do you remember your first impressions?</h1>
+  <h1>А коли ви почали писати код, чи пам'ятаєте свої перші враження?</h1>
 </div>
 
 ---
@@ -85,6 +85,8 @@ layout: image
 image: /meme-dot1-dot2.png
 backgroundSize: 40%
 ---
+
+
 
 ---
 
@@ -102,7 +104,7 @@ backgroundSize: 40%
 
 ---
 
-# Pieter Levels
+# Пітер Левелс
 
 <div class="w-full flex justify-center">
   <img src="/levelsio.png" class="w-1/2"/>
@@ -128,7 +130,7 @@ backgroundSize: 40%
 
 ---
 
-# Fails - SaaS
+# Невдачі - SaaS
 
 <div class="w-full flex justify-center">
   <img src="/fail-saas.png" class="w-1/3"/>
@@ -136,7 +138,7 @@ backgroundSize: 40%
 
 ---
 
-# Fails - Fetch
+# Невдачі - Fetch
 
 <div class="w-full flex justify-center">
   <img src="/fail-fetch.png" class="w-1/3"/>
@@ -144,7 +146,7 @@ backgroundSize: 40%
 
 ---
 
-# Fails - rm -rf
+# Невдачі - rm -rf
 
 <div class="w-full flex justify-center">
   <img src="/fail-clean-directory.png" class="w-4/5"/>
@@ -152,12 +154,12 @@ backgroundSize: 40%
 
 ---
 
-# Are there any tasks for which code generation with AI already works today?
+# Чи існують завдання, для яких генерація коду за допомогою ШІ вже працює сьогодні?
 
 - MVP
-- Hobby projects
-- "One-time" tasks
-- Experiments and prototypes
+- Хобі-проекти
+- "Одноразові" завдання
+- Експерименти та прототипи
 - ...
 
 ---
@@ -173,7 +175,7 @@ layout: image-left
 image: /vibe-coding-tools.jpg
 ---
 
-# Tools
+# Інструменти
 
 - Cursor
 - Windsurf
@@ -189,7 +191,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# How it works: everything is controlled by LLM
+# Як це працює: мозок - це LLM
 
 <div class="w-full flex justify-center">
   <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
@@ -233,7 +235,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# What does a prompt consist of?
+# З чого складається промпт?
 
 <div class="w-full flex justify-center mt-20">
   <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
@@ -241,7 +243,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Simple agent
+# Простий агент
 
 <div class="w-full flex justify-center">
   <img src="/how-works-simple-agent.png" class="w-4/5"/>
@@ -249,7 +251,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Agent with tools
+# Агент з інструментами
 
 <div class="w-full flex justify-center">
   <img src="/how-works-modern-agent.png" class="w-4/5"/>
@@ -257,13 +259,13 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Main problems
+# Основні проблеми
 
-- Non-deterministic LLM: butterfly effect
-- Context window limitations
-- Hallucinations
-- Security and legal issues
-- Current knowledge
+- Недетермінованість LLM: ефект метелика
+- Обмеження контекстного вікна
+- Галюцинації
+- Безпека та юридичні питання
+- Актуальність знань
 - ...
 
 ---
@@ -271,19 +273,19 @@ layout: image-left
 image: /butterfly-effect.png
 ---
 
-# Non-deterministic LLM - butterfly effect
+# Недетермінованість LLM - ефект метелика
 
-Using LLM for a classical engineer is like fighting chaos
+Використання LLM для класичного інженера — це як боротьба з хаосом
 
-- **Repeatability not guaranteed**
-- **Unstable dependencies**
-- **Scattered edits across the project**
-- **Mass rewriting of existing code**
-- **Divergence (drift) of agents in multi-step chains**
+- **Повторюваність не гарантована**
+- **Нестабільні залежності**
+- **Розкидані правки по проекту**
+- **Масове переписування існуючого коду**
+- **Розбіжність (дрейф) агентів у багатоетапних ланцюжках**
 
 ---
 
-# Context window limitations
+# Обмеження контекстного вікна
 
 <div class="w-full flex justify-center">
   <img src="/context-window.png" class="w-4/5"/>
@@ -291,28 +293,28 @@ Using LLM for a classical engineer is like fighting chaos
 
 ---
 
-# LOC in LLM tokens
+# LOC в токенах LLM
 
 ## React:
 
-- **React jsx (100 lines):** 700 tokens
-- **React jsx (200 lines):** 1,500 tokens
+- **React jsx (100 рядків):** 700 токенів
+- **React jsx (200 рядків):** 1,500 токенів
 
 ## SQL:
 
-- **SQL script (100 lines):** 1,150 tokens
-- **SQL script (200 lines):** 2,500 tokens
+- **SQL скрипт (100 рядків):** 1,150 токенів
+- **SQL скрипт (200 рядків):** 2,500 токенів
 
 ## Python:
 
-- **Python source code file (100 lines):** 1,000 tokens
-- **Python source code file (200 lines):** 1,700 tokens
+- **Файл Python (100 рядків):** 1,000 токенів
+- **Файл Python (200 рядків):** 1,700 токенів
 
-Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
+Джерело: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Price
+# Ціна
 
 <div class="w-full flex justify-center">
   <img src="/openai-pricing.png" class="w-120"/>
@@ -324,18 +326,18 @@ Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Security and legal issues with AI code generation
+# Безпека та юридичні проблеми при генерації коду ШІ
 
-- Generation of unsafe (vulnerable) code
-- Execution of arbitrary commands in the system
-- Use of integrations with external services without proper control
-- Installation of unwanted dependencies (attack vector)
-- Leakage of confidential information and intellectual property
-- Generation of code that violates intellectual property rights
+- Генерація небезпечного (вразливого) коду
+- Виконання довільних команд у системі
+- Використання інтеграцій із зовнішніми сервісами без належного контролю
+- Встановлення небажаних залежностей (вектор атаки)
+- Витік конфіденційної інформації та інтелектуальної власності
+- Генерація коду, що порушує права інтелектуальної власності
 
 ---
 
-# Tools: general purpose
+# Інструменти: загального призначення
 
 - ChatGPT
 - Gemini (gemini.google, aistudio.google.com)
@@ -378,7 +380,7 @@ Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Two Steps Back Pattern
+# Патерн "Два кроки назад"
 
 <div class="w-full flex justify-center">
   <img src="/two-steps-back.png" class="w-4/5"/>
@@ -386,7 +388,7 @@ Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Repository Prompt Tools - Repomix
+# Інструменти для промптів репозиторію - Repomix
 
 <div class="w-full flex justify-center">
   <img src="/repomix.png" class="w-1/2"/>
@@ -523,12 +525,12 @@ Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-  <h1 class="text-center">Tips, Tricks and Resources</h1>
+  <h1 class="text-center">Поради, хитрощі та ресурси</h1>
 </div>
 
 ---
 
-# Cursor Rules
+# Правила Cursor
 
 <div class="w-full flex justify-center">
   <img src="/cursor-rules.png" class="w-2/3"/>
@@ -572,7 +574,7 @@ https://orm.drizzle.team/llms.txt
 
 ---
 
-# Plan Mode
+# Режим планування
 
 <div class="w-full flex justify-center">
   <img src="/cursor-plan-mode.png" class="w-1/2"/>
@@ -584,7 +586,7 @@ https://orm.drizzle.team/llms.txt
 
 ---
 
-# Docs
+# Документація
 
 <div class="w-full flex justify-center">
   <img src="/cursor-docs.png" class="w-3/4"/>
@@ -598,32 +600,32 @@ https://orm.drizzle.team/llms.txt
 
 # TDD
 
-# Prompt:
+# Промпт:
 
-## create ...
+## створи ...
 
-## write tests first, then the code, then update code until tests pass
+## спочатку напиши тести, потім код, потім оновлюй код, доки тести не пройдуть
 
 ---
 
-# Local History Plugin
+# Плагін Local History
 
-<div class="w-full flex justify-center">
+<div class="w-full flex justify-center mt-20">
   <img src="/local-history.png" class="w-1/2"/>
 </div>
 
 ---
 
-# Issues
+# Проблеми
 
-- Breaking code changes
-- Hallucinations and incorrect solutions
-- Deadlocks
-- Limited knowledge of new libraries/frameworks
-- Issues with large codebases
-- Issues with security
-- Speed of development
-- Cost of usage
+- Зміни, що ламають код
+- Галюцинації та неправильні рішення
+- Дедлоки (взаємні блокування)
+- Обмежені знання нових бібліотек/фреймворків
+- Проблеми з великими кодовими базами
+- Проблеми з безпекою
+- Швидкість розробки
+- Вартість використання
 - ...
 
 ---
@@ -631,22 +633,22 @@ layout: image-left
 image: /vyacheslav-koldovskyy.png
 ---
 
-# Viacheslav Koldovskyy
+# В'ячеслав Колдовський
 
-- Ph.D, Associate Professor
-- 20+ years in IT
-- SoftServe Academy Competence Manager
-- Certified Google Cloud Professional Architect
-- Practical AI Enthusiast
-- YouTuber: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
-- Blogger: [t.me/programmingmentor](https://t.me/programmingmentor)
+- К.т.н., доцент
+- 20+ років в ІТ
+- Менеджер з компетенцій SoftServe Academy
+- Сертифікований Google Cloud Professional Architect
+- Практикуючий ентузіаст ШІ
+- Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
+- Блогер: [t.me/programmingmentor](https://t.me/programmingmentor)
 - LinkedIn: [koldovsky](https://www.linkedin.com/in/koldovsky/)
 
 ---
 ## layout: end
 ---
 
-# Thank you!
+# Дякую!
 
 <div class="flex justify-center w-full h-30 items-center">
   <img src="/slides-qr.png" class="w-25 h-25"/>
