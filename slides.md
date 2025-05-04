@@ -5,9 +5,9 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: /dou-first-slide-bg.png
 # some information about your slides (markdown enabled)
-title: Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
+title: Cursor, Windsurf, Copilot, Cline — best practices for development with AI
 info: |
-  ## Виступ для ДОУ
+  ## Presentation for DOU
 
 # apply unocss classes to the current slide
 # class: text-center  <-- Removing default text-center for more control
@@ -35,7 +35,7 @@ fonts:
 </div>
 
 <div class="absolute top-1/3 left-[20%] text-white text-lg z-10" style="margin-top: -40px; background-color: black; padding: 10px;">
-  Київ, 2025
+  Kyiv, 2025
 </div>
 
 <!-- Wrapper Div for Both Blocks -->
@@ -43,13 +43,13 @@ fonts:
   <!-- Black Title Div -->
   <div class="p-6" style="background-color: black;">
     <h1 class="text-white font-black uppercase tracking-wide leading-none" style="font-size: 30px; line-height: 1;">
-      Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з AI
+      Cursor, Windsurf, Copilot, Cline — best practices for development with AI
     </h1>
   </div>
   <!-- Pink Subtitle Div (moved back inside, width adjusted) -->
   <div class="p-4 w-2/3 ml-1/2" style="background-color: rgb(255, 22, 177);"> <!-- Adjusted width to w-2/3 -->
     <p class="text-white text-sm">
-      В'ячеслав Колдовський, SoftServe
+      Viacheslav Koldovskyy, SoftServe
     </p>
   </div>
 </div>
@@ -60,7 +60,7 @@ image: /prince-of-persia.webp
 ---
 
 <div class="h-full flex items-center">
-  <h1>Чи пам'ятаєте момент, коли ви захотіли стати розробником?</h1>
+  <h1>Do you remember the moment when you wanted to become a developer?</h1>
 </div>
 
 ---
@@ -71,7 +71,7 @@ backgroundSize: contain
 ---
 
 <div class="h-full flex items-center">
-  <h1>А як почали писати код, пригадуєте перші відчуття?</h1>
+  <h1>And when you started writing code, do you remember your first impressions?</h1>
 </div>
 
 ---
@@ -152,12 +152,12 @@ backgroundSize: 40%
 
 ---
 
-# Чи є взагалі задачі, для яких кодогенерація з AI працює вже сьогодні?
+# Are there any tasks for which code generation with AI already works today?
 
 - MVP
-- Хобі-проєкти
-- "Одноразові" задачі
-- Експерименти і прототипи
+- Hobby projects
+- "One-time" tasks
+- Experiments and prototypes
 - ...
 
 ---
@@ -173,7 +173,7 @@ layout: image-left
 image: /vibe-coding-tools.jpg
 ---
 
-# Інструменти
+# Tools
 
 - Cursor
 - Windsurf
@@ -189,7 +189,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Як це працює: всім керує LLM
+# How it works: everything is controlled by LLM
 
 <div class="w-full flex justify-center">
   <img src="/how-works-prompt-llm-code.png" class="w-4/5"/>
@@ -233,7 +233,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# З чого складається prompt?
+# What does a prompt consist of?
 
 <div class="w-full flex justify-center mt-20">
   <img src="/how-works-prompt-expanded-llm-code.png" class="w-4/5"/>
@@ -241,7 +241,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Простий агент
+# Simple agent
 
 <div class="w-full flex justify-center">
   <img src="/how-works-simple-agent.png" class="w-4/5"/>
@@ -249,7 +249,7 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Агент з інструментами
+# Agent with tools
 
 <div class="w-full flex justify-center">
   <img src="/how-works-modern-agent.png" class="w-4/5"/>
@@ -257,13 +257,13 @@ image: /vibe-coding-tools.jpg
 
 ---
 
-# Основні проблеми
+# Main problems
 
-- Недетермінованість LLM: ефект метелика
-- Обмеження контекстового вікна
-- Галюцинації
-- Безпека і юридичні питання
-- Сучасні знання
+- Non-deterministic LLM: butterfly effect
+- Context window limitations
+- Hallucinations
+- Security and legal issues
+- Current knowledge
 - ...
 
 ---
@@ -271,19 +271,19 @@ layout: image-left
 image: /butterfly-effect.png
 ---
 
-# Недертермінованість LLM - ефект метелика
+# Non-deterministic LLM - butterfly effect
 
-Використання LLM для класичного інженера схоже на боротьбу з хаосом
+Using LLM for a classical engineer is like fighting chaos
 
-- **Повторюваність не гарантована**
-- **Нестабільні залежності**
-- **Розсіяні правки по проєкту**
-- **Масове переписування існуючого коду**
-- **Дивергенція (дрейф) агентів у багатокрокових ланцюжках**
+- **Repeatability not guaranteed**
+- **Unstable dependencies**
+- **Scattered edits across the project**
+- **Mass rewriting of existing code**
+- **Divergence (drift) of agents in multi-step chains**
 
 ---
 
-# Обмеження контекстового вікна
+# Context window limitations
 
 <div class="w-full flex justify-center">
   <img src="/context-window.png" class="w-4/5"/>
@@ -291,28 +291,28 @@ image: /butterfly-effect.png
 
 ---
 
-# LOC в LLM токенах
+# LOC in LLM tokens
 
 ## React:
 
-- **React jsx (100 lines):** 700 токенів
-- **React jsx (200 lines):** 1,500 токенів
+- **React jsx (100 lines):** 700 tokens
+- **React jsx (200 lines):** 1,500 tokens
 
 ## SQL:
 
-- **SQL script (100 lines):** 1,150 токенів
-- **SQL script (200 lines):** 2,500 токенів
+- **SQL script (100 lines):** 1,150 tokens
+- **SQL script (200 lines):** 2,500 tokens
 
 ## Python:
 
-- **Python source code file (100 lines):** 1,000 токенів
-- **Python source code file (200 lines):** 1,700 токенів
+- **Python source code file (100 lines):** 1,000 tokens
+- **Python source code file (200 lines):** 1,700 tokens
 
-Джерело: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
+Source: https://prompt.16x.engineer/blog/chatgpt-context-window-token-limit
 
 ---
 
-# Ціна
+# Price
 
 <div class="w-full flex justify-center">
   <img src="/openai-pricing.png" class="w-120"/>
@@ -324,18 +324,18 @@ image: /butterfly-effect.png
 
 ---
 
-# Безпека і юридичні питання з генерацією коду з AI
+# Security and legal issues with AI code generation
 
-- Генерація небезпечного (вразливого) коду
-- Виконання довільних команд у системі
-- Використання інтеграцій із зовнішніми сервісами без належного контролю
-- Встановлення небажаних залежностей (вектор атак)
-- Витік конфіденційної інформації та інтелектуальної власності
-- Генерація коду з порушенням прав інтелектуальної власності
+- Generation of unsafe (vulnerable) code
+- Execution of arbitrary commands in the system
+- Use of integrations with external services without proper control
+- Installation of unwanted dependencies (attack vector)
+- Leakage of confidential information and intellectual property
+- Generation of code that violates intellectual property rights
 
 ---
 
-# Інструменти: загального призначення
+# Tools: general purpose
 
 - ChatGPT
 - Gemini (gemini.google, aistudio.google.com)
@@ -631,16 +631,16 @@ layout: image-left
 image: /vyacheslav-koldovskyy.png
 ---
 
-# В'ячеслав Колдовський
+# Viacheslav Koldovskyy
 
-- Ph.D, доцент
-- 20+ років в IT
+- Ph.D, Associate Professor
+- 20+ years in IT
 - SoftServe Academy Competence Manager
 - Certified Google Cloud Professional Architect
-- Ентузіаст Практичного AI
-- Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
-- Блогер: [t.me/programmingmentor](https://t.me/programmingmentor)
-- Лінкедін: [koldovsky](https://www.linkedin.com/in/koldovsky/)
+- Practical AI Enthusiast
+- YouTuber: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
+- Blogger: [t.me/programmingmentor](https://t.me/programmingmentor)
+- LinkedIn: [koldovsky](https://www.linkedin.com/in/koldovsky/)
 
 ---
 ## layout: end
