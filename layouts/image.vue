@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { handleBackground } from "./layoutHelper";
+import { handleBackground, resolveAssetUrl } from "./layoutHelper";
 
 const props = defineProps({
   image: {
@@ -29,18 +29,18 @@ const style = computed(() =>
   >
     <!-- Apply global background -->
     <div
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(&quot;/dou-bg-dark-01.png&quot;);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -2;
-      "
+      :style="{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundImage: `url('${resolveAssetUrl('/dou-bg-dark-01.png')}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        zIndex: -2,
+      }"
     ></div>
     <!-- Content -->
     <slot />

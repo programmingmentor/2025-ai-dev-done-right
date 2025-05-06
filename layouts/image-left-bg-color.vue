@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { handleBackground } from "./layoutHelper";
+import { handleBackground, resolveAssetUrl } from "./layoutHelper";
 
 const props = defineProps({
   image: {
@@ -31,12 +31,12 @@ const style = computed(() => {
 <template>
   <div
     class="grid grid-cols-2 w-full h-full auto-rows-fr"
-    style="
-      background-image: url(&quot;/dou-bg-dark-01.png&quot;);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    "
+    :style="{
+      backgroundImage: `url('${resolveAssetUrl('/dou-bg-dark-01.png')}')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }"
   >
     <div class="w-full h-full" :style="style" />
     <div class="slidev-layout default" :class="props.class">
