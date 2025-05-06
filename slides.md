@@ -149,10 +149,10 @@ https://www.reddit.com/r/compsci/comments/1d2pb75/01_02_030000000000000004_in_de
 
 ---
 
-# Невдачі - Fetch
+# Невдачі - Занадто великий проєкт
 
-<div class="w-full flex justify-center">
-  <img src="/fail-fetch.png" class="w-1/3"/>
+<div class="w-full flex justify-center mt-10">
+  <img src="/fail-too-big-project.png" class="w-100"/>
 </div>
 
 ---
@@ -182,20 +182,36 @@ https://www.reddit.com/r/compsci/comments/1d2pb75/01_02_030000000000000004_in_de
 </div>
 
 ---
-layout: image
-image: /vibe-coding-tools.jpg
-backgroundSize: contain
----
+
+# Хто працює з AI?
+
+<div class="w-full flex justify-center">
+  <img src="/anthropic-report.png" class="w-130"/>
+</div>
+
+<div class="text-center">
+  <a href="https://www.anthropic.com/news/the-anthropic-economic-index" target="_blank">https://www.anthropic.com/news/the-anthropic-economic-index</a>
+</div>
 
 ---
-layout: image
-image: /current-state-vibe-coding-vs-ai-assisted.png
-backgroundSize: contain
+
+# Вайб-кодингу забагато не буває :)
+
+<div class="w-full flex justify-center">
+  <img src="/vibe-coding-tools.jpg"  class="w-110"/>
+</div>
+
 ---
 
-<!--
-https://x.com/mattpocockuk/status/1913313872666321018
--->
+# Не завжди розробка з AI це вайб-кодинг
+
+<div class="w-full flex justify-center">
+  <img src="/current-state-vibe-coding-vs-ai-assisted.png" class="w-110"/>
+</div>
+
+<div class="text-center">
+  <a href="https://x.com/mattpocockuk/status/1913313872666321018" target="_blank">https://x.com/mattpocockuk/status/1913313872666321018</a>
+</div>
 
 ---
 
@@ -262,14 +278,51 @@ https://x.com/mattpocockuk/status/1913313872666321018
 
 ---
 
-# Cline
+# Cline / Roo Coode
 
 <div class="w-full flex justify-center">
   <img src="/cline.png" class="w-4/5"/>
 </div>
 
-<div class="w-full flex justify-center">
+<div class="w-full flex justify-center gap-10">
   <a href="https://cline.bot/">https://cline.bot/</a>
+  <a href="https://roocode.com/">https://roocode.com/</a>
+</div>
+
+---
+
+# Augment Agent
+
+<div class="w-full flex justify-center mt-10">
+  <img src="/augment-agent.png" class="w-120"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://www.augmentcode.com/">https://www.augmentcode.com/</a>
+</div>
+
+---
+
+# bolt.new
+
+<div class="w-full flex justify-center">
+  <img src="/bolt-new.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://bolt.new/">https://bolt.new/</a>
+</div>
+
+---
+
+# v0.dev
+
+<div class="w-full flex justify-center">
+  <img src="/v0-dev.png" class="w-4/5"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://v0.dev/">https://v0.dev/</a>
 </div>
 
 ---
@@ -318,6 +371,67 @@ https://x.com/mattpocockuk/status/1913313872666321018
 
 <div class="w-full flex justify-center mt-10">
   <img src="/how-works-multi-agent.png" class="w-100"/>
+</div>
+
+---
+
+# Як IDE визначають контекст?
+
+<div class="w-full flex justify-center mt-10">
+  <img src="/windsurf-context.png" class="w-140"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://learn.deeplearning.ai/courses/build-apps-with-windsurfs-ai-coding-agents/">https://learn.deeplearning.ai/courses/build-apps-with-windsurfs-ai-coding-agents/</a>
+</div>
+
+---
+
+# MCP - Model Context Protocol
+
+<div class="w-full flex justify-center mt-10">
+  <img src="/mcp.png" class="w-120"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://modelcontextprotocol.io/">https://modelcontextprotocol.io/</a>
+</div>
+
+---
+
+# MCP.so
+
+<div class="w-full flex justify-center">
+  <img src="/mcp-list.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://mcp.so/">https://mcp.so/</a>
+</div>
+
+---
+
+# llms.txt
+
+<div class="w-full flex justify-center">
+  <img src="/llms-txt.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://llmstxt.org/">https://llmstxt.org/</a>
+</div>
+
+---
+
+# Drizzle ORM llms.txt, llms-full.txt
+
+<Tweet scale="0.65" id="1896981123559002158" class="w-3/4 mt-10"/>
+
+<div class="flex gap-5 flex-col w-fit">
+  <a href="https://orm.drizzle.team/llms.txt">https://orm.drizzle.team/llms.txt</a>
+</div>
+<div class="flex gap-5 flex-col w-fit">
+  <a href="https://orm.drizzle.team/llms-full.txt">https://orm.drizzle.team/llms-full.txt</a>
 </div>
 
 ---
@@ -503,15 +617,27 @@ image: /bounded-context.svg
 
 ---
 
-# Послідовність розробки
+# Послідовність розробки для нового проєкту (greenfield development)
 
-- Генеруємо набір документів
-- Прототипуємо
-- Розробляємо
-- Інтегруємо
-- Тестуємо
-- Розгортаємо
-- ...
+<div v-click class="w-full flex justify-center mt-20">
+  <img src="/ai-assisted-dev-process.png" class="w-200"/>
+</div>
+
+---
+
+# Послідовність розробки для існуючого проєкту (brownfield development)
+
+<div v-click class="w-full flex justify-center mt-20">
+  <img src="/ai-assisted-dev-process.png" class="w-200"/>
+</div>
+
+---
+
+# Послідовність розробки для великого проєкту
+
+<div v-click class="w-full flex justify-center mt-20">
+  <img src="/ai-assisted-dev-process.png" class="w-200"/>
+</div>
 
 ---
 
@@ -528,116 +654,48 @@ image: /bounded-context.svg
 
 ---
 
-# Патерн "Два кроки назад"
+# Де взяти PRD (Product Requirements Document)?
 
-<div class="w-full flex justify-center">
-  <img src="/two-steps-back.png" class="w-1/5"/>
-</div>
+<v-click>
+  <div class="w-full flex justify-center">
+    <img src="/prd-meta-prompt.png" class="w-1/2"/>
+  </div>
 
----
-
-# Інструменти для промптів репозиторію - Repomix
-
-<div class="w-full flex justify-center">
-  <img src="/repomix.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://repomix.com/">https://repomix.com/</a>
-</div>
+  <div class="w-full flex justify-center">
+    <a href="https://chatgpt.com/share/68193d31-a340-8008-b1cc-34fd78c505eb">https://chatgpt.com/share/68193d31-a340-8008-b1cc-34fd78c505eb</a>
+  </div>
+</v-click>
 
 ---
 
-# Прототипування
-
----
-
-# bolt.new
+# Або так
 
 <div class="w-full flex justify-center">
-  <img src="/bolt-new.png" class="w-1/2"/>
+  <img src="/cursor-new.png" class="w-160"/>
 </div>
 
 <div class="w-full flex justify-center">
-  <a href="https://bolt.new/">https://bolt.new/</a>
+  <a href="https://www.cursor.new/">https://www.cursor.new/</a>
 </div>
 
 ---
+layout: image-left
+image: /inbox-zero-rules.png
+---
 
-# v0.dev
+# Де взяти наступні документи?
 
-<div class="w-full flex justify-center">
-  <img src="/v0-dev.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://v0.dev/">https://v0.dev/</a>
-</div>
+- Генеруємо з PRD
+- Адаптуємо під власні вимоги (зокрема тех стек)
+- Досліджуємо приклади
+- Експериментуємо
 
 ---
 
-# repl.it agent
+# Репозиторії готових правил і промптів
 
 <div class="w-full flex justify-center">
-  <img src="/replit.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://repl.it/">https://repl.it/</a>
-</div>
-
----
-
-# MCP - Model Context Protocol
-
-<div class="w-full flex justify-center">
-  <img src="/mcp.png" class="w-4/5"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://modelcontextprotocol.io/">https://modelcontextprotocol.io/</a>
-</div>
-
----
-
-# Memory bank
-
----
-
-# MCP.so
-
-<div class="w-full flex justify-center">
-  <img src="/mcp-list.png" class="w-1/2"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://mcp.so/">https://mcp.so/</a>
-</div>
-
----
-
-<div class="w-full h-full flex justify-center items-center">
-  <h1 class="text-center">Поради, хитрощі та ресурси</h1>
-</div>
-
----
-
-# Правила Cursor
-
-<div class="w-full flex justify-center">
-  <img src="/cursor-rules.png" class="w-2/3"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://docs.cursor.com/context/rules-for-ai">https://docs.cursor.com/context/rules-for-ai</a>
-</div>
-
----
-
-# Cursor.directory
-
-<div class="w-full flex justify-center">
-  <img src="/cursor-directory.png" class="w-4/5"/>
+  <img src="/cursor-directory.png" class="w-160"/>
 </div>
 
 <div class="w-full flex justify-center">
@@ -646,23 +704,25 @@ image: /bounded-context.svg
 
 ---
 
-# llms.txt
+# Генеруємо таски, виконуємо, трекаємо прогрес
 
-<div class="w-full flex justify-center">
-  <img src="/llms-txt.png" class="w-1/2"/>
+<div class="w-full flex justify-center mt">
+  <img src="/task-master.png" class="w-160"/>
 </div>
 
 <div class="w-full flex justify-center">
-  <a href="https://llmstxt.org/">https://llmstxt.org/</a>
+  <a href="https://github.com/eyaltoledano/claude-task-master">https://github.com/eyaltoledano/claude-task-master</a>
 </div>
 
 ---
 
-# Drizzle ORM llms.txt
+# TDD
 
-<Tweet scale="0.65" id="1896981123559002158" class="w-3/4"/>
+# Промпт:
 
-https://orm.drizzle.team/llms.txt
+## створи ...
+
+## спочатку напиши тести, потім код, потім оновлюй код, доки тести не пройдуть
 
 ---
 
@@ -678,37 +738,57 @@ https://orm.drizzle.team/llms.txt
 
 ---
 
+# Що робити, якщо не виходить?
+
+- Часто рух вперед потребує крок назад
+- Переключаємося між моделями
+- Модифікуємо промпт
+- Додаємо/змінюємо контекст
+- Переключаємося між IDE
+- Змінюємо документи/правила (тех стек)
+- Застосовуємо TDD
+- Зменшуємо крок
+- Підключаємо тяжку артилерію
+
+---
+
+# Інструменти для промптів репозиторію - Repomix
+
+<div class="w-full flex justify-center">
+  <img src="/repomix.png" class="w-1/2"/>
+</div>
+
+<div class="w-full flex justify-center">
+  <a href="https://repomix.com/">https://repomix.com/</a>
+</div>
+
+---
+
 # Документування архітектури
 
-https://x.com/flowisgreat/status/1917328733905772880
+<div class="w-350 flex justify-center mt-10">
+  <Tweet scale="0.45" id="1917328733905772880" class="w-200" />
+</div>
 
 ---
 
 # Пам'ять
 
-https://x.com/elie2222/status/1914374725129666904
-
----
-
-# Документація
-
-<div class="w-full flex justify-center">
-  <img src="/cursor-docs.png" class="w-3/4"/>
-</div>
-
-<div class="w-full flex justify-center">
-  <a href="https://docs.cursor.com/context/@-symbols/@-docs">https://docs.cursor.com/context/@-symbols/@-docs</a>
+<div class="w-350 flex justify-center mt-10">
+  <Tweet scale="0.4" id="1914374725129666904" class="w-200"  />
 </div>
 
 ---
 
-# TDD
+# Якщо генерується старий код?
 
-# Промпт:
+<div class="w-full flex justify-center">
+  <img src="/context7.png" class="w-100"/>
+</div>
 
-## створи ...
-
-## спочатку напиши тести, потім код, потім оновлюй код, доки тести не пройдуть
+<div class="w-full flex justify-center">
+  <a href="https://context7.com/">https://context7.com/</a>
+</div>
 
 ---
 
@@ -720,7 +800,7 @@ https://x.com/elie2222/status/1914374725129666904
 
 ---
 
-# Ітеративно
+# Це ніколи не старіє
 
 <div class="w-full flex justify-center">
   <div class="ml-16"> 
@@ -729,29 +809,15 @@ https://x.com/elie2222/status/1914374725129666904
 </div>
 
 ---
-
-# Проблеми
-
-- Зміни, що ламають код
-- Галюцинації та неправильні рішення
-- Дедлоки (взаємні блокування)
-- Обмежені знання нових бібліотек/фреймворків
-- Проблеми з великими кодовими базами
-- Проблеми з безпекою
-- Швидкість розробки
-- Вартість використання
-- ...
-
----
 layout: image-left
 image: /vyacheslav-koldovskyy.png
 ---
 
 # В'ячеслав Колдовський
 
-- К.т.н., доцент
-- 20+ років в ІТ
-- Менеджер з компетенцій SoftServe Academy
+- Ph.D., доцент, 20+ років в ІТ
+- Менеджер з компетентностей SoftServe Academy
+- Керівник програми генеративного ШІ IT Step Університету
 - Сертифікований Google Cloud Professional Architect
 - Практикуючий ентузіаст ШІ
 - Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
@@ -769,5 +835,5 @@ image: /vyacheslav-koldovskyy.png
 </div>
 
 <div class="w-full flex justify-center">
-  <a href="https://programmingmentor.github.io/slidev-vibe-coding/">https://programmingmentor.github.io/slidev-vibe-coding/</a>
+  <a href="https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/">https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/</a>
 </div>
