@@ -390,11 +390,11 @@ https://www.reddit.com/r/compsci/comments/1d2pb75/01_02_030000000000000004_in_de
 # MCP - Model Context Protocol
 
 <div class="w-full flex justify-center mt-10">
-  <img src="/mcp.png" class="w-120"/>
+  <img src="/mcp-vs-fn.gif" class="w-80">
 </div>
 
 <div class="w-full flex justify-center">
-  <a href="https://modelcontextprotocol.io/">https://modelcontextprotocol.io/</a>
+  <a href="https://blog.dailydoseofds.com/p/build-an-mcp-server-in-3-steps">https://blog.dailydoseofds.com/p/build-an-mcp-server-in-3-steps</a>
 </div>
 
 ---
