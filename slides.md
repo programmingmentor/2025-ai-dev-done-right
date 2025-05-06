@@ -748,23 +748,29 @@ image: /inbox-zero-rules.png
 - Змінюємо документи/правила (тех стек)
 - Застосовуємо TDD
 - Зменшуємо крок
-- Підключаємо тяжку артилерію
+- Підключаємо "big brother"
 
 ---
 
-# Інструменти для промптів репозиторію - Repomix
+# Як зробити промпт з репозиторію?
 
-<div class="w-full flex justify-center">
-  <img src="/repomix.png" class="w-1/2"/>
+<div class="w-full flex justify-center mt-5">
+  <img src="/repomix.png" class="w-100"/>
 </div>
 
-<div class="w-full flex justify-center">
+<div class="w-full flex justify-center mt-5">
   <a href="https://repomix.com/">https://repomix.com/</a>
 </div>
 
+<div class="w-full flex justify-center mt-5">
+```bash
+npx repomix
+```
+</div>
+
 ---
 
-# Документування архітектури
+# Документування змін структури проєкту
 
 <div class="w-350 flex justify-center mt-10">
   <Tweet scale="0.45" id="1917328733905772880" class="w-200" />
@@ -780,7 +786,7 @@ image: /inbox-zero-rules.png
 
 ---
 
-# Якщо генерується старий код?
+# Якщо генерується legacy-код?
 
 <div class="w-full flex justify-center">
   <img src="/context7.png" class="w-100"/>
@@ -817,7 +823,7 @@ image: /vyacheslav-koldovskyy.png
 
 - Ph.D., доцент, 20+ років в ІТ
 - Менеджер з компетентностей SoftServe Academy
-- Керівник програми генеративного ШІ IT Step Університету
+- Керівник програми генеративного ШІ в IT Step Університеті
 - Сертифікований Google Cloud Professional Architect
 - Практикуючий ентузіаст ШІ
 - Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
@@ -830,10 +836,10 @@ image: /vyacheslav-koldovskyy.png
 
 # Дякую!
 
-<div class="flex justify-center w-full h-30 items-center">
+<div class="flex justify-center w-full h-30 items-center mt-20">
   <img src="/slides-qr.png" class="w-25 h-25"/>
 </div>
 
-<div class="w-full flex justify-center">
-  <a href="https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/">https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/</a>
+<div class="w-full flex justify-center mt-10">
+  <a href="https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/">https://programmingmentor.github.io/<br>slidev-dou-day-2025-ai-dev-done-right/</a>
 </div>
