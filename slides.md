@@ -7,7 +7,7 @@ background: /dou-first-slide-bg.png
 # some information about your slides (markdown enabled)
 title: Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з ШІ
 info: |
-  ## Презентація для DOU
+  ## Презентація
 
 # apply unocss classes to the current slide
 # class: text-center  <-- Removing default text-center for more control
@@ -30,12 +30,9 @@ fonts:
 ---
 
 <!-- DOU Logo Top Right -->
-<div class="absolute top-4 right-5 z-10">
-  <img src="/dou-day-logo-bw.png" alt="DOU Logo BW" style="height: 60px;" />
-</div>
 
 <div class="absolute top-1/3 left-[20%] text-white text-lg z-10" style="margin-top: -40px; background-color: black; padding: 10px;">
-  Київ, 2025
+  
 </div>
 
 <!-- Wrapper Div for Both Blocks -->
@@ -43,51 +40,16 @@ fonts:
   <!-- Black Title Div -->
   <div class="p-6" style="background-color: black;">
     <h1 class="text-white font-black uppercase tracking-wide leading-none" style="font-size: 30px; line-height: 1;">
-      Cursor, Windsurf, Copilot, Cline — найкращі практики розробки з ШІ
+      2025: найкращі практики розробки з ШІ
     </h1>
   </div>
   <!-- Pink Subtitle Div (moved back inside, width adjusted) -->
   <div class="p-4 w-2/3 ml-1/2" style="background-color: rgb(255, 22, 177);"> <!-- Adjusted width to w-2/3 -->
     <p class="text-white text-sm">
-      В'ячеслав Колдовський, SoftServe
+      В'ячеслав Колдовський
     </p>
   </div>
 </div>
-
----
-layout: image-left
-image: /prince-of-persia.webp
----
-
-<div class="h-full flex items-center">
-  <h1>Чи пам'ятаєте ви той момент, коли захотіли стати розробником?</h1>
-</div>
-
----
-layout: image-left-bg-color
-image: /troll-face.png
-bgColor: white
-backgroundSize: contain
----
-
-<div class="h-full flex items-center">
-  <h1>А коли ви почали писати код, чи пам'ятаєте свої перші враження?</h1>
-</div>
-
----
-
-# Всім знайомо :)
-
-<div class="w-full flex justify-center items-center space-x-4 mt-10">
-  <img src="/meme-dot1-dot2.jpg" width="200px" class="rounded shadow"/>
-  <img src="/meme-works-doesnt-work.jpg" width="200px" class="rounded shadow"/>
-  <img src="/meme-regex.jpeg" width="200px" class="rounded shadow"/>
-  <img src="/meme-error-line-42.jpg" width="200px" class="rounded shadow"/>
-</div>
-
-<!--
-https://www.reddit.com/r/compsci/comments/1d2pb75/01_02_030000000000000004_in_depth/
--->
 
 ---
 
@@ -841,5 +803,5 @@ image: /vyacheslav-koldovskyy.png
 </div>
 
 <div class="w-full flex justify-center mt-10">
-  <a href="https://programmingmentor.github.io/slidev-dou-day-2025-ai-dev-done-right/">https://programmingmentor.github.io/<br>slidev-dou-day-2025-ai-dev-done-right/</a>
+  <a href="https://programmingmentor.github.io/2025-ai-dev-done-right/">https://programmingmentor.github.io/2025-ai-dev-done-right/</a>
 </div>

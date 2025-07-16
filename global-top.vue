@@ -1,17 +1,5 @@
 <template>
-  <div class="ssa-logo-global" v-if="$slidev.nav.currentLayout !== 'end'">
-    <a href="https://career.softserveinc.com/uk-ua/softserve-academy">
-      <img src="/ssa-logo-white.svg" alt="SoftServe Academy Logo" />
-    </a>
-  </div>
-  <div class="dou-logo-global" v-if="$slidev.nav.currentPage !== 1">
-    <a href="https://dou.ua/">
-      <img src="/dou-day-logo-color.png" alt="DOU Logo" />
-    </a>
-  </div>
-  <div class="city-year-text" v-if="$slidev.nav.currentPage !== 1">
-    Київ, 2025
-  </div>
+  <!-- DOU logo block removed -->
 </template>
 
 <style>
