@@ -777,23 +777,7 @@ npx repomix
 </div>
 
 ---
-layout: image-left
-image: /vyacheslav-koldovskyy.png
----
-
-# В'ячеслав Колдовський
-
-- Ph.D., доцент, 20+ років в ІТ
-- Менеджер з компетентностей SoftServe Academy
-- Керівник програми генеративного ШІ в IT Step Університеті
-- Сертифікований Google Cloud Professional Architect
-- Практикуючий ентузіаст ШІ
-- Ютубер: [youtube.com/@programmingmentorua](https://www.youtube.com/@programmingmentorua)
-- Блогер: [t.me/programmingmentor](https://t.me/programmingmentor)
-- LinkedIn: [koldovsky](https://www.linkedin.com/in/koldovsky/)
-
----
-## layout: end
+layout: end
 ---
 
 # Дякую!
