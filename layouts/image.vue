@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { handleBackground, resolveAssetUrl } from "./layoutHelper";
+import TelegramLogo from "../components/TelegramLogo.vue";
 
 const props = defineProps({
   image: {
@@ -45,4 +46,5 @@ const style = computed(() =>
     <!-- Content -->
     <slot />
   </div>
+  <TelegramLogo />
 </template>

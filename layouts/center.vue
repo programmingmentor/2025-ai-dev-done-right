@@ -1,5 +1,6 @@
 <script setup>
 import { resolveAssetUrl } from "./layoutHelper";
+import TelegramLogo from "../components/TelegramLogo.vue";
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import { resolveAssetUrl } from "./layoutHelper";
       <slot />
     </div>
   </div>
+  <TelegramLogo />
 </template>

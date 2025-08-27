@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // Default layout with custom background
 import { resolveAssetUrl } from "./layoutHelper";
+import TelegramLogo from "../components/TelegramLogo.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import { resolveAssetUrl } from "./layoutHelper";
   >
     <slot />
   </div>
+  <TelegramLogo />
 </template>
 
 <style>

@@ -27,6 +27,10 @@ fonts:
   # Optional: specify weights and italic if needed
   # weights: '400,500,700'
   # italic: false
+
+# Import components
+components:
+  - ./components/TelegramLogo.vue
 ---
 
 <!-- DOU Logo Top Right -->
@@ -50,6 +54,9 @@ fonts:
     </p>
   </div>
 </div>
+
+<!-- Telegram Logo for first slide -->
+<TelegramLogo />
 
 ---
 
